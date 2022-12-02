@@ -1,0 +1,19 @@
+﻿
+
+Install-Package Microsoft.Data.Sqlite.Core -Version 5.0.4
+
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.1
+
+
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+
+
+Ref:
+https://www.talkingdotnet.com/create-sqlite-db-entity-framework-core-code-first/
+
+https://www.learnentityframeworkcore5.com/project-types/winform
